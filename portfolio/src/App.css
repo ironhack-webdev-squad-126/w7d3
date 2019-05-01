@@ -45,3 +45,11 @@
 .nav-style a {
   text-decoration: none;
 }
+
+.active {
+  color: "red";
+}
+
+.selected {
+  color: "red";
+}
