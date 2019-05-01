@@ -25,10 +25,20 @@ class Movies extends React.Component {
       }
     ]
   };
+
+  addMovie = movie => {
+    const moviesCopy = this.state.movies.slice();
+    moviesCopy.unshift(movie);
+
+    this.setState({
+      movies: moviesCopy
+    });
+  };
+
   render() {
     return (
       <React.Fragment>
-        <MovieForm />
+        <MovieForm addMovie={this.addMovie} />
         <MoviesList movies={this.state.movies} />
       </React.Fragment>
     );
