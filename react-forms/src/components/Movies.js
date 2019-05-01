@@ -1,5 +1,6 @@
 import React from "react";
 import MoviesList from "./MoviesList";
+import MovieForm from "./MovieForm";
 
 class Movies extends React.Component {
   state = {
@@ -25,7 +26,12 @@ class Movies extends React.Component {
     ]
   };
   render() {
-    return <MoviesList movies={this.state.movies} />;
+    return (
+      <React.Fragment>
+        <MovieForm />
+        <MoviesList movies={this.state.movies} />
+      </React.Fragment>
+    );
   }
 }
 
