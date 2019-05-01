@@ -7,11 +7,7 @@ const Navbar = () => {
       <ul>
         <li>
           {/* <Link to="/">Home</Link> */}
-          <NavLink
-            exact
-            to="/"
-            activeStyle={{ color: "red", fontWeight: "bold" }}
-          >
+          <NavLink exact to="/" activeClassName="selected">
             Home
           </NavLink>
         </li>

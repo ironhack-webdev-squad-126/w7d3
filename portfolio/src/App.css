@@ -31,7 +31,7 @@
     transform: rotate(360deg);
   }
 }
-
+/* 
 .nav-style {
   text-align: right;
 }
@@ -44,12 +44,4 @@
 
 .nav-style a {
   text-decoration: none;
-}
-
-.active {
-  color: "red";
-}
-
-.selected {
-  color: "red";
-}
+} */
